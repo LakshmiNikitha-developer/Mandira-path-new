@@ -1,0 +1,317 @@
+/* Mandira Path Color Palette */
+:root {
+    --stone-grey: #6D6A63;
+    --vintage-brown: #8B6F4E;
+    --sunset-gold: #D6A354;
+    --sandstone: #C2A68C;
+    --charcoal: #2B2926;
+    --rustic-cocoa: #5B4330;
+    --light-cream: #F4EDE2;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-cream);
+    font-family: 'Poppins', sans-serif;
+    color: var(--charcoal);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(43, 41, 38, 0.55),
+            rgba(43, 41, 38, 0.65)
+        ),
+        url('https://media.istockphoto.com/id/1444368720/photo/shri-airavatesvara-temple-is-a-hindu-temple-located-in-dharasuram-kumbakonam-tamil-nadu.jpg?b=1&s=170667a&w=0&k=20&c=x0KS-XXV9rPQH9ZSmGzFNa2yTJSj6AtLYNBGN-xCHEM=');
+
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.85) saturate(1.2);
+}
+
+/* Golden sunlight overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at top right,
+        rgba(214, 163, 84, 0.35),
+        rgba(0,0,0,0)
+    );
+    z-index: 1;
+}
+
+/* Text styling */
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.2rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-top: 12px;
+    font-weight: 300;
+}
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--charcoal);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--sunset-gold);
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: var(--light-cream);
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--sunset-gold);
+}
+
+
+/* General Sections */
+.section {
+    padding: 80px 40px;
+    background: var(--light-cream);
+    border-bottom: 1px solid var(--sandstone);
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--rustic-cocoa);
+}
+
+.section p {
+    max-width: 700px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 70px 20px;
+    background: var(--sandstone);
+    color: var(--charcoal);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.3rem;
+    color: var(--light-cream);
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--charcoal);
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+/* Left Section: Icon + Text */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+/* Logo Text */
+
+.logo {
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--sunset-gold);
+    font-weight: bold;
+}
+
+
+
+/* Center Search */
+.search-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-center input {
+    width: 55%;
+    max-width: 350px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--sandstone);
+    color: var(--charcoal);
+    outline: none;
+}
+
+/* Right Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: var(--light-cream);
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--sunset-gold);
+}
+
+/* Temple Category Boxes */
+.temple-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f4ef;
+}
+
+.temple-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #483b2e;
+}
+
+.temple-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.temple-box {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temple-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.temple-box h3 {
+    font-size: 22px;
+    color: #5a4634;
+    margin: 15px 0;
+}
+
+.temple-box p {
+    padding: 0 20px 20px;
+    font-size: 15px;
+    color: #6b5d4a;
+}
+
+.temple-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/*contact button*/
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #8b5e3c;  /* Vintage brown */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.contact-btn:hover {
+    background-color: #5c3f28; /* Darker brown */
+}
+/* Footer */
+.footer {
+    background: var(--charcoal);
+    color: var(--light-cream);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    opacity: 0.9;
+}

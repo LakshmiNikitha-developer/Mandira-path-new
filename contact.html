@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us - Mandira Path</title>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+
+        /* 🔥 Background Image */
+        background: url('shiva.jpg') no-repeat  center/cover;
+        height: 100vh;
+    }
+
+    /* Transparent card */
+    .contact-container {
+        width: 90%;
+        max-width: 550px;
+        margin: 60px auto;
+        background: rgba(255, 255, 255, 0.85); /* transparent white */
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        backdrop-filter: blur(4px);
+        margin: 60px auto;
+        margin-left: 600px;  /* Move right slightly */
+    }
+
+    h2 {
+        text-align: center;
+        color: #5c3f28;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 15px;
+        display: block;
+        color: #4a3523;
+    }
+
+    input, textarea {
+        width: 90%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #bfa48d;
+        margin-top: 5px;
+        font-size: 15px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    textarea {
+        height: 130px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background-color: #8b5e3c;
+        color: white;
+        font-size: 17px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button:hover {
+        background-color: #5c3f28;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label>Your Message</label>
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let mailBody = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+
+    window.location.href = `mailto:mandirapathofficial@gmail.com?subject=Message from Website&body=${mailBody}`;
+});
+</script>
+
+</body>
+</html>
+
