@@ -23,6 +23,37 @@
             margin-right: 20px;
         }
 
+/* Left Section: Icon + Text */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(196, 174, 9);
+    font-weight: bold;
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.nav-links li a:hover {
+    color: var(--sunset-gold);
+}
+
+.search-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
         h1 {
             text-align: center;
             margin-top: 30px;
@@ -31,19 +62,54 @@
 
         .temple-card {
             width: 90%;
-            max-width: 500px;
-            margin: 15px auto;
+            max-width: 600px;
+            margin: 20px auto;
             background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #00000033;
+            border-radius: 12px;
+            box-shadow: 0 5px 12px #00000030;
+            overflow: hidden;
         }
 
-        .temple-card a {
+        .temple-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .temple-content {
+            padding: 15px;
+        }
+
+        .temple-content h2 {
+            margin: 0;
+            color: #3a2e2e;
+        }
+
+        .temple-content p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .temple-content a {
             color: #2b4aa3;
             font-weight: bold;
             text-decoration: none;
         }
+
+        .temple-content a:hover {
+            text-decoration: underline;
+        }
+
+        .temple-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.temple-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
     </style>
 </head>
 
@@ -51,35 +117,63 @@
 
 <!-- NAVIGATION BAR -->
 <nav>
-    <a href="index.html">Home</a>
+
+    <div class="nav-left">
+        <img src="../logo.png.jpeg" class="nav-icon" alt="Mandira Path Logo">
+        <div class="logo">Mandira Path</div>
+        
+    </div>
+
+    <div class="search-center">
+        <input type="text" placeholder="Search temples...">
+    </div>
+
+    <a href="../index.html">Home</a>
     <a href="south.html">South Indian</a>
-    <a href="north.html">North Indian</a>
-    <a href="modern.html">Recent Temples</a>
-    <a href="idols.html">Idols</a>
-    <a href="gurus.html">Gurus</a>
-    <a href="kumbhamela.html">Kumbha Mela</a>
-    <a href="about.html">About</a>
+    <a href="../north/north.html">North Indian</a>
+    <a href="../recent/recent.html">Recent Temples</a>
+    <a href="../idols/idols.html">Idols</a>
+    <a href="../gurus/gurus.html">Gurus</a>
+    <a href="../kumbh/kumbh.html">Kumbha Mela</a>
+    <a href="../index.html#about">About</a>
 </nav>
 
 <h1>South Indian Temples</h1>
 
-<!-- Temples will be added here -->
+<div class="temple-box-container">
+<!-- TEMPLE CARD 1 -->
+<a href="brihadeeshwara.html" >
 <div class="temple-card">
-    <h2>Brihadeeswarar Temple</h2>
-    <p>Thanjavur, Tamil Nadu</p>
-    <a href="https://brihadeeswarartemple.org/" target="_blank">Official Website</a>
+    <img src="images/brihadeeshwara.jpg" alt="Brihadeeswarara Temple">
+    <div class="temple-content">
+        <h2>Brihadeeswarar Temple</h2>
+        <p>Thanjavur, Tamil Nadu</p>
+        <a href="https://brihadeeswarartemple.org/" target="_blank">Official Website</a>
+    </div>
 </div>
+</a>
 
+<!-- TEMPLE CARD 2 -->
+<a href="meenakshi.html" >
 <div class="temple-card">
-    <h2>Meenakshi Amman Temple</h2>
-    <p>Madurai, Tamil Nadu</p>
-    <a href="https://www.meenakshi.org/" target="_blank">Official Website</a>
+    <img src="images/meenakshi.jpg" alt="Meenakshi Amman Temple">
+    <div class="temple-content">
+        <h2>Meenakshi Amman Temple</h2>
+        <p>Madurai, Tamil Nadu</p>
+    </div>
 </div>
+</a>
 
+<!-- TEMPLE CARD 3 -->
+<a href="virupaksha.html" >
 <div class="temple-card">
-    <h2>Virupaksha Temple</h2>
-    <p>Hampi, Karnataka</p>
-    <a href="https://hampi.in/virupaksha-temple" target="_blank">Info Page</a>
+    <img src="images/virupaksha.jpg" alt="Virupaksha Temple">
+    <div class="temple-content">
+        <h2>Virupaksha Temple</h2>
+        <p>Hampi, Karnataka</p>
+    </div>
+</div>
+</a>
 </div>
 
 </body>
