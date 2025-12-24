@@ -300,7 +300,7 @@ body {
 }
 .contact-btn:hover {
     background-color: #5c3f28; /* Darker brown */
-     box-shadow:
+    box-shadow:
     0 0 0 2px var(--sunset-gold),
     0 0 10px rgba(214, 163, 84, 0.6);
 }

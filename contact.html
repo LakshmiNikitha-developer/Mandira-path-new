@@ -6,76 +6,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us - Mandira Path</title>
 
-<style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
 
-        /* 🔥 Background Image */
-        background: url('shiva.jpg') no-repeat center center fixed;
-        background-size: cover;
-    }
+    <style>
+/* ------------------ BODY ------------------ */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 
-    /* Transparent card */
+    background: url('shiva.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ------------------ HOME BUTTON ------------------ */
+.home-btn-text {
+    position: fixed;
+    top: 30px;
+    left: 25px;
+
+    padding: 12px 24px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 0 2px #d6a354,
+        0 0 18px rgba(214,163,84,0.75);
+
+    transition: all 0.3s ease;
+    z-index: 1200;
+}
+
+.home-btn-text:hover,
+.home-btn-text:active {
+    transform: scale(1.08);
+    background: #5c3f28;
+}
+
+/* ------------------ CONTACT CONTAINER ------------------ */
+.contact-container {
+    width: 90%;
+    max-width: 550px;
+
+    margin: 100px auto;   /* ✅ center horizontally */
+
+    background: rgba(255, 255, 255, 0.85);
+    padding: 28px;
+    border-radius: 12px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    backdrop-filter: blur(4px);
+}
+
+/* ------------------ FORM ------------------ */
+h2 {
+    text-align: center;
+    color: #5c3f28;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #4a3523;
+}
+
+input,
+textarea {
+    width: 96%;               /* ✅ FULL WIDTH */
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #bfa48d;
+    margin-top: 6px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+textarea {
+    height: 130px;
+}
+
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 13px;
+    background-color: #8b5e3c;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5c3f28;
+}
+
+/* ------------------ MOBILE FIX ------------------ */
+@media (max-width: 768px) {
     .contact-container {
-        width: 90%;
-        max-width: 550px;
-        margin: 60px auto;
-        background: rgba(255, 255, 255, 0.85); /* transparent white */
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        backdrop-filter: blur(4px);
-        margin: 60px auto;
-        margin-left: 600px;  /* Move right slightly */
+        margin: 120px auto 40px;
+        padding: 22px;
     }
 
-    h2 {
-        text-align: center;
-        color: #5c3f28;
+    .home-btn-text {
+        top: 15px;
+        left: 15px;
+        padding: 10px 22px;
+        font-size: 16px;
     }
-
-    label {
-        font-weight: bold;
-        margin-top: 15px;
-        display: block;
-        color: #4a3523;
-    }
-
-    input, textarea {
-        width: 90%;
-        padding: 12px;
-        border-radius: 6px;
-        border: 1px solid #bfa48d;
-        margin-top: 5px;
-        font-size: 15px;
-        background: rgba(255, 255, 255, 0.9);
-    }
-
-    textarea {
-        height: 130px;
-    }
-
-    button {
-        margin-top: 20px;
-        width: 100%;
-        padding: 12px;
-        background-color: #8b5e3c;
-        color: white;
-        font-size: 17px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    button:hover {
-        background-color: #5c3f28;
-    }
+}
 </style>
+
 
 </head>
 <body>
+
+    <a href="index.html" class="home-btn-text" title="Back to Home">
+    HOME
+</a>
+
 
 <div class="contact-container">
     <h2>Contact Us</h2>
