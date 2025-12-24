@@ -93,23 +93,6 @@ body {
     font-weight: bold;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-.nav-links li a {
-    color: var(--light-cream);
-    text-decoration: none;
-    font-weight: 400;
-    transition: 0.3s;
-}
-
-.nav-links li a:hover {
-    color: var(--sunset-gold);
-}
-
 
 /* General Sections */
 .section {
@@ -317,6 +300,9 @@ body {
 }
 .contact-btn:hover {
     background-color: #5c3f28; /* Darker brown */
+     box-shadow:
+    0 0 0 2px var(--sunset-gold),
+    0 0 10px rgba(214, 163, 84, 0.6);
 }
 /* Footer */
 .footer {
