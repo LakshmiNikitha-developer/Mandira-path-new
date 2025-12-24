@@ -288,21 +288,26 @@ body {
 
 /*contact button*/
 .contact-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #8b5e3c;  /* Vintage brown */
+    
+
+    padding: 12px 24px;
+    background-color: #8b5e3c;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-.contact-btn:hover {
-    background-color: #5c3f28; /* Darker brown */
+    border-radius: 25px;
+
     box-shadow:
-    0 0 0 2px var(--sunset-gold),
-    0 0 10px rgba(214, 163, 84, 0.6);
+        0 0 0 2px #d6a354,
+        0 0 18px rgba(214,163,84,0.75);
+
+    transition: all 0.3s ease;
+    z-index: 1200;
+}
+.contact-btn:hover,
+.contact-btn:active{
+    transform: scale(1.08);
+    background: #5c3f28;
 }
 /* Footer */
 .footer {
