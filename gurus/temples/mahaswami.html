@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanchi Mahaswamy | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Kanchi Mahaswamy</h1>
+    <div class="category">LOCATION: Kanchi Kamakoti Peetham in Kanchipuram, Tamil Nadu</div>
+
+    <div class="gallery">
+        <img src="/gurus/images/mahaswami.jpg" alt="Kanchi Mahaswamy image 1">
+        <img src="nan" alt="Kanchi Mahaswamy image 2">
+        <img src="nan" alt="Kanchi Mahaswamy image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Born in 1894 and ascending the peetham at the age of 13, Sri Chandrashekharendra Saraswati VIII became a living embodiment of Sanatana Dharma, guiding India through colonial rule, independence, and modernity while preserving the deepest philosophical, ritualistic, and ethical foundations of Hindu civilization.Mahaswamigal’s uniqueness lies in his perfect balance of silence and scholarship, renunciation and relevance, where he upheld ancient traditions without rigidity and engaged the modern world without compromise, standing as a timeless bridge between Vedic wisdom and contemporary life.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>Mahaswamigal lived an austere ascetic life, clad in simple saffron robes, speaking sparingly, radiating profound silence and compassion, and teaching primarily through presence rather than discourse; despite his vast scriptural mastery of Vedas, Upanishads, Brahma Sutras, Advaita Vedanta, Agamas, and Smritis, he remained humble, accessible, and deeply connected to ordinary devotees.Historically, he played a crucial role in the revival of Vedic education, temple traditions, Agama practices, and Sanskrit scholarship, guiding scholars, saints, scientists, artists, and political leaders alike, while remaining completely detached from power or fame, making him a silent architect of India’s spiritual continuity.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, he is regarded as a Jnani par excellence, a realized soul who emphasized inner purity, devotion, humility, and surrender over ritual complexity, teaching that true spirituality lies in self-discipline, compassion, and awareness, regardless of one’s social or intellectual standing.Philosophically, Mahaswamigal was a towering authority on Advaita Vedanta, yet he harmonized it seamlessly with Bhakti and Karma Yoga, explaining that non-duality is not intellectual abstraction but lived experience achieved through dharmic living, self-control, and devotion, making ancient metaphysics accessible to modern minds.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Devotees traditionally honor Mahaswamigal through simple prayers, chanting of Vedic mantras, Guru Stotrams, meditation, and acts of service, with Thursdays and his Aradhana days observed with special reverence; offerings emphasize simplicity, purity, and intention rather than grandeur.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="NO" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

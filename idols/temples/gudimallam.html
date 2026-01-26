@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gudimallam Shiva lingam | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Gudimallam Shiva lingam</h1>
+    <div class="category">LOCATION: Parasurameswara Temple, Gudimallam village, Tirupati district, Andhra Pradesh, India</div>
+
+    <div class="gallery">
+        <img src="/idols/images/gudimallam.jpg" alt="Gudimallam Shiva lingam image 1">
+        <img src="nan" alt="Gudimallam Shiva lingam image 2">
+        <img src="nan" alt="Gudimallam Shiva lingam image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The Gudimallam Lingam is one of the oldest and most unusual Shiva lingams in India, dating back to roughly the 3rd century BCE to 2nd century CE — well before most historical temples were constructed. Housed inside the Parasurameswara Temple in the village of Gudimallam (near Punganur, on the Andhra-Karnataka border region), this sculptural lingam is remarkable for being one of the earliest anthropomorphic representations of Lord Shiva integrated into a lingam form. Its antiquity, uniqueness of figure, and continued reverence make it a cornerstone in the study of Indian iconography, temple history, and religious continuity.The Gudimallam Lingam is unique in Indian religious art and sculpture because it is one of the earliest (possibly the earliest) surviving representations of Shiva, combining lingam symbolism with a human figure in the same stone. It predates classical temple forms and provides crucial evidence for how early South Asian religious communities visualized the divine. Its survival through millennia, continued worship, and the architectural layers built around it make this idol not just a relic but a living bridge between pre-historic cultic practice and organized temple religion.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>Unlike typical smooth cylindrical lingams, the Gudimallam Lingam features a full human figure carved in relief on the front of the shaft, representing Vishwarupa Shiva or Sthanu (the cosmic form). The figure’s face, torso, and limbs are clearly articulated on the cylindrical body, with arms resting at the sides and legs suggested by the tapering form — making this both a lingam and a sculptural figure simultaneously. Part of the torso is adorned with ornate jewelry and drapery, indicating an early synthesis of abstract symbolism and human form. The lingam sits inside a simple stone sanctum, but its shape, pose, and elaborate design separate it from later stone monuments of classical temple sculpture.The Gudimallam Lingam itself is unique in Indian art history because it blurs the boundary between aniconic symbol and anthropomorphic deity, making it a transitional form not seen anywhere else in such an early period. The Parasurameswara Temple, which now houses the lingam, features later architectural additions from the Eastern Chalukya and Satyavahana periods, but all of these were designed to enshrine this ancient idol. The figure carved on the lingam was created using early chiseling techniques on hard stone, showing surprisingly high precision given the era. The visualization of human features combined with the cylindrical lingam form makes it a living document of how early Indian artisans conceptualized the divine.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, the Gudimallam Lingam symbolizes the union of the unmanifest cosmic pillar (lingam) with manifested divine form, representing Shiva’s omnipresence and transcendence. Historically, it predates most known temple architecture and shows that cultic worship of Shiva in lingam form was established centuries before the Gupta and post-Gupta eras. It suggests a tradition where the lingam was both an aniconic symbol and a living representation of the deity’s body. Archaeologists and historians believe the idol was originally worshipped in a non-structural setting — possibly an open shrine or simple platform — before the Parasurameswara Temple was built around it during the early centuries of the Common Era.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>The Gudimallam Lingam is still worshipped today, with daily poojas and ablutions performed by priests of the Parasurameswara Temple. Rituals like Abhishekam (sacred bathing of the lingam), Alankaram (decoration with flowers), and Deeparadhana (lamp offering) occur according to traditional Shaiva Agama prescriptions. The temple also observes major festivals such as Mahashivaratri, during which the idol receives elaborate worship and attracts devotees from far-flung regions, reinforcing its status as an active sacred object rather than a mere museum piece.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="no website" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

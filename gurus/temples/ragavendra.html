@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guru Ragavendra Swamy | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Guru Ragavendra Swamy</h1>
+    <div class="category">LOCATION: Mantralayam, on the banks of the Tungabhadra River in present-day Andhra Pradesh,</div>
+
+    <div class="gallery">
+        <img src="/gurus/images/ragavendraswamy.jpg" alt="Guru Ragavendra Swamy image 1">
+        <img src="nan" alt="Guru Ragavendra Swamy image 2">
+        <img src="nan" alt="Guru Ragavendra Swamy image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Born as Venkatanatha in 1595 CE, Sri Raghavendra Tirtha renounced worldly life to become a saint-scholar, eventually entering Jeeva Samadhi in 1671 CE, declaring that he would continue to bless devotees for 700 years, a promise believed by followers to be actively fulfilled even today.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>Raghavendra Swami is remembered as a scholar-saint of extraordinary intellect and compassion, deeply learned in Vedas, Upanishads, Brahma Sutras, Nyaya, Mimamsa, and Madhvacharya’s Dvaita philosophy, yet profoundly accessible to common people, offering solace, healing, and hope through prayer and devotion to Lord Vishnu.Historically, Sri Raghavendra Tirtha played a vital role in preserving Madhva lineage scholarship, writing extensive commentaries and guiding disciples who continued his philosophical legacy, while also becoming a unifying devotional figure beyond sectarian boundaries, respected by Shaivas, Vaishnavas, and common devotees alike.Sri Raghavendra Tirtha is unique because he represents the perfect synthesis of intellect, devotion, and living grace, a guru whose physical departure did not diminish his presence, transforming Mantralayam into a timeless spiritual force where faith, philosophy, and compassion converge.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, Sri Raghavendra Tirtha is revered as a Chiranjivi-like guru presence, believed to be eternally active at Mantralayam, granting relief from suffering, protection from calamities, mental peace, and spiritual upliftment, especially to those who surrender with faith and humility.Philosophically, he strengthened Dvaita Vedanta, emphasizing the eternal distinction between Jiva (soul) and Ishvara (God), teaching that liberation is attained through devotion, righteous conduct, and divine grace, not ego-based intellectual conquest, thus grounding metaphysics in lived bhakti.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily worship at Mantralayam includes Seva, Harathi, Tirtha Prasada distribution, mantra japa, and the recitation of the Raghavendra Stotra, with Thursdays considered especially powerful; devotees often perform Seva Sankalpa, feeding the poor, and charitable acts as offerings aligned with the saint’s teachings.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="NO" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

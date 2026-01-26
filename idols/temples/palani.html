@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palani Subramanya Swamy  | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Palani Subramanya Swamy </h1>
+    <div class="category">LOCATION: Dindigul district of Tamil Nadu</div>
+
+    <div class="gallery">
+        <img src="/idols/images/palani.jpg" alt="Palani Subramanya Swamy  image 1">
+        <img src="nan" alt="Palani Subramanya Swamy  image 2">
+        <img src="nan" alt="Palani Subramanya Swamy  image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The Palani Murugan Temple, located in the Dindigul district of Tamil Nadu, is one of the most sacred pilgrimage centers dedicated to Lord Murugan (Subramanya Swamy) and forms an integral part of the Arupadai Veedu, the six divine abodes of Murugan. Situated atop Sivagiri Hill, the temple is over a thousand years old and is renowned for housing the idol of Dhandayuthapani Swamy, symbolizing Murugan as a youthful ascetic holding a staff, embodying renunciation, wisdom, and spiritual discipline.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The presiding deity, Dhandayuthapani Swamy, represents Lord Murugan in his ascetic form after renouncing worldly life, making Palani a powerful center for spiritual purification, penance, and healing. Devotees believe the deity possesses immense curative and divine powers, and worship here is especially associated with relief from physical ailments, mental distress, and karmic burdens.Pilgrims reach the hilltop shrine by climbing 689 steps, or by using a rope car or winch service, symbolizing spiritual ascent through effort and devotion. Major festivals such as Thai Poosam and Panguni Uthiram draw millions of devotees, many of whom undertake vows such as head tonsuring, carrying Kavadi, and observing fasts as acts of penance and surrender to Lord Murugan.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>The idol at Palani is unique in Hindu temple tradition as it is believed to have been created by the legendary Siddha Bhogar using Navapashanam, an ancient alchemical formula meaning “nine poisons.” Unlike conventional stone or metal idols, this idol is made from a hardened, resinous, wax-like substance formed by combining nine toxic minerals in precise proportions, which Siddha tradition holds results in a powerful medicinal compound rather than a harmful one.The nine substances traditionally associated with the idol’s creation include Veeram (Mercury Chloride), Pooram (Calomel), Rasam (Mercury), Jathilingam (Cinnabar), Kandagam (Sulphur), Gauri Pasanam (Arsenic Trioxide), Vellai Pasanam (White Arsenic), Mridharsingh (Lead Monoxide), and Silasat (an arsenic-based mineral). Though individually poisonous, Siddha philosophy maintains that their controlled combination transforms them into a stable, therapeutic substance with long-lasting medicinal properties.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily abhishekam (ritual bathing) of the idol is performed using substances such as milk, sandalwood paste, and Panchamirtham, which devotees believe absorb the idol’s medicinal essence and become sacred healing prasadam. The sandalwood paste applied overnight and removed the next day is especially revered as a potent remedy for various illnesses, reinforcing the temple’s reputation as both a spiritual and healing center.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="no website" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

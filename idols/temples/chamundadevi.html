@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chamunda Devi  | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Chamunda Devi </h1>
+    <div class="category">LOCATION: Odisha State Museum, Bhubaneswar, Odisha, India.(Believed original provenance: Early medieval Odisha region)</div>
+
+    <div class="gallery">
+        <img src="/idols/images/chamundadevi.jpg" alt="Chamunda Devi  image 1">
+        <img src="nan" alt="Chamunda Devi  image 2">
+        <img src="nan" alt="Chamunda Devi  image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The Chamunda Devi idol displayed at the Odisha State Museum is one of the most intense and rare representations of the ferocious aspect of the Divine Feminine (Shakti) in Indian art. Dated approximately to the 8th century CE, this sculpture belongs to the early medieval period, when Tantric Shaktism and esoteric goddess worship flourished across eastern India. Chamunda, the slayer of the demons Chanda and Munda, is depicted here not as a benevolent mother, but as Kala-Shakti — the embodiment of death, time, dissolution, and cosmic truth, meant to terrify evil and awaken spiritual fearlessness in devotees.This Chamunda Devi idol is unique for its uncompromisingly terrifying realism, representing Shakti not as a protector, but as the final truth of time and death. Unlike later softened goddess forms, this sculpture preserves the raw Tantric worldview where liberation comes through confronting fear, impermanence, and destruction. Its survival from the 8th century, its Odisha origin — a cradle of Tantric Shaktism — and its placement in a museum rather than a temple make it a rare, powerful, and intellectually demanding relic of India’s spiritual past.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The sculpture portrays Chamunda as an emaciated, skeletal goddess, with sunken eyes, exposed ribs, sagging breasts, and a gaunt torso, symbolizing the impermanence of the physical body. She is adorned with a mala (garland) of skulls, wears a jata-mukuta (matted hair crown) entwined with a serpent, and holds a kapala (bowl of blood or sacrificial essence). In several Chamunda depictions from Odisha, she is shown seated upon or standing over a corpse or demon, reinforcing her role as the conqueror of death. The terrifying realism of the carving, combined with its ritual symbolism, sets this idol apart from conventional temple icons.Artistically, this sculpture is a masterclass in early medieval Indian expressionism, where emotional and philosophical impact outweighed aesthetic softness. The sculptor deliberately emphasized harsh anatomical realism to convey spiritual truth — decay, mortality, and transcendence. The detailing of bones, skull garlands, and facial features reflects advanced stone-carving skill, while also adhering strictly to Shilpa Shastra and Tantric iconographic texts, which prescribe Chamunda’s terrifying appearance. Odisha is particularly important in Chamunda iconography, as many early examples across India trace stylistic roots back to this region.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, Chamunda is worshipped as a Devi of death, time (Kala), cremation grounds, and ultimate liberation, especially in Tantric and Shakta traditions. She represents the stage where ego, fear, and illusion are destroyed, leading to moksha. Historically, the prominence of such an idol during the 8th century reflects the rise of Tantric practices in Odisha, particularly during the Bhauma-Kara and post-Gupta periods, when goddess worship took more esoteric and symbolic forms. Chamunda idols were often installed near cremation grounds or secret shrines, not in mainstream temples, which explains why many such idols later became forgotten, displaced, or preserved only in museums.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>At present, no daily worship is performed, as the idol is preserved as a museum artifact under controlled conditions. Historically, however, Chamunda worship involved night rituals, Tantric mantras, bali (symbolic offerings), and cremation-ground sadhana, rather than conventional temple pujas. Such practices were intentionally secretive and limited to initiated practitioners, which is one major reason these idols were later removed from active worship and relocated for preservation.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="no website" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

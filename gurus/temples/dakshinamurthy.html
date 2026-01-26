@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guru Dhakshinamurthy | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Guru Dhakshinamurthy</h1>
+    <div class="category">LOCATION: Dakshinamurti is a pan-Indian iconographic form of Shiva found in many Shaiva temples across India, especially in South Indian temple niches (south-facing chelams / niches), prominently in Chola, Pallava, Hoysala, and Vijayanagara period temples such as Chidambaram, Kanchipuram, Madurai, Thanjavur, and Hoysaleswara temples.</div>
+
+    <div class="gallery">
+        <img src="/gurus/images/dakshinamurthy.jpg" alt="Guru Dhakshinamurthy image 1">
+        <img src="nan" alt="Guru Dhakshinamurthy image 2">
+        <img src="nan" alt="Guru Dhakshinamurthy image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Dakshinamurti — literally the “south-facing lord” — represents Lord Shiva as the universal guru who imparts the highest wisdom silently, often depicted under a banyan tree, in deep contemplation, teaching through serene, non-verbal transmission of knowledge (ātma jñāna), dissolving ignorance and revealing the eternal Self.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>In traditional iconography, Dakshinamurti is depicted as a youthful, meditative figure seated under a banyan tree on a raised dais (pitha), facing south (dakshina), with four arms holding symbolic attributes — the fire (agni) for inner dissolution of ignorance, the drum (damaru) for cosmic rhythm, the necklace of beads (akshamala) for continuous awareness, and the left hand in jnana mudra indicating knowledge. Often with a lion as his seat or seated cross-legged (yogic posture), the right foot is slightly forward, hinting at living action rooted in wisdom, while attendants like sages or divine disciples surround him as listeners of spiritual truth.On a metaphysical level, Dakshinamurti symbolizes the cosmic consciousness within every seeker. His southward orientation signifies the conquest of death (as “south” is traditionally ruled by Yama), indicating that true wisdom liberates from the cycle of birth and death. The banyan tree represents eternal truth, the spreading shade embodies shelter from illusion, and his silent posture indicates that ultimate knowledge is understood not through speech, but through profound direct experience.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, Dakshinamurti is the embodiment of the inner teacher, the one who removes ignorance (avidya) by illuminating the heart-mind with Self-knowledge (ātma-jnana). In Advaita Vedanta and Shaiva Siddhanta alike, he is revered as the ultimate guru who isn’t learned through scriptures or rituals alone but is realized within through direct intuitive insight. His teaching transcends syllables and words, representing silent realization — wisdom accessed through meditation, surrender, and inner perception.Dakshinamurti is unique among Hindu deities because he represents knowledge itself as a living presence, the guru of sages and seekers alike, teaching silently through intuitive revelation. Unlike ceremonial deity forms that receive offerings and rituals externally, Dakshinamurti’s greatest teaching is inward — dissolving the illusion of duality and revealing the non-dual Self within, making him both a cosmic and internal spiritual guide.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>While Dakshinamurti forms are not typically the primary presiding deity in temples, he is worshipped with special pujas, abhishekams, and japa (mantra recitation), especially on Thursdays (day associated with guru light), Guru Purnima, and during knowledge-seeking rites. Students, seekers of wisdom, yogis, teachers, and scholars often perform homages with offerings of bilva leaves, incense, and mantra chanting, seeking clarity, liberation, and inner transformation.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="NO" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
