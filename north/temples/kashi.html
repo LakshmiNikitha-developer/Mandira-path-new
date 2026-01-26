@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kashi Viswanath Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Kashi Viswanath Temple</h1>
+    <div class="category">LOCATION: Vishwanath Gali, in Varanasi, Uttar Pradesh, India</div>
+
+    <div class="gallery">
+        <img src="/north/images/kashi.jpg" alt="Kashi Viswanath Temple image 1">
+        <img src="/north/images/kashi2.jpg" alt="Kashi Viswanath Temple image 2">
+        <img src="/north/images/kashi3.jpg" alt="Kashi Viswanath Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Kashi Vishwanath Temple, situated in the ancient city of Varanasi on the sacred banks of the River Ganga in Uttar Pradesh, is one of the holiest shrines in Hinduism. Dedicated to Lord Shiva in his form as Vishwanath, the “Lord of the Universe,” the temple stands at the spiritual heart of India. Kashi, also known as Varanasi or Banaras, is believed to be the oldest continuously inhabited city in the world and is revered as the eternal city where life, death, and liberation converge. Among the twelve Jyotirlingas of Lord Shiva, Kashi Vishwanath is regarded as the most spiritually potent, attracting millions of devotees, saints, scholars, and seekers every year.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The history of the Kashi Vishwanath Temple spans several millennia and reflects the resilience of Hindu faith. Ancient scriptures such as the Skanda Purana and Shiva Purana reference the glory of Kashi and the Vishwanath Jyotirlinga. The temple was destroyed and rebuilt multiple times during medieval invasions. The present structure was reconstructed in 1780 by Maharani Ahilyabai Holkar of Indore, a revered ruler known for restoring sacred Hindu sites across India.   The temple complex features a sanctum sanctorum housing the sacred Jyotirlinga, surrounded by smaller shrines dedicated to various deities including Kalabhairava, Vishnu, and Shakti. The temple’s spire and dome are plated with gold, donated in 1835 by Maharaja Ranjit Singh of Punjab, earning it the title “Golden Temple.” Located amidst narrow lanes near the Ganga ghats, the temple forms the nucleus of Varanasi’s sacred geography and remains an enduring symbol of devotion and cultural continuity.  </p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Kashi Vishwanath holds unmatched spiritual significance in Hindu belief. It is said that Lord Shiva himself resides permanently in Kashi, making the city independent of cosmic dissolution. According to tradition, a soul that leaves the body in Kashi attains Moksha, liberation from the cycle of birth and death. It is believed that Lord Shiva whispers the sacred Taraka Mantra into the ears of the dying, guiding their soul toward eternal freedom.  The Jyotirlinga at Kashi symbolizes infinite consciousness and timeless existence. Pilgrims believe that a single darshan of Vishwanath destroys accumulated karmas and grants spiritual awakening. Kashi is also one of the most important Shakti–Peetha circuits, where Shiva and Shakti are eternally united. Saints like Adi Shankaracharya, Kabir, Tulsidas, and Ramakrishna Paramahamsa have all acknowledged Kashi as a supreme center of spiritual realization.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>The daily worship at Kashi Vishwanath follows ancient Shaivite traditions. The day begins with Mangala Aarti before dawn, awakening the deity. This is followed by Bhog Aarti, Saptarishi Aarti, and Shringar Aarti, during which the Jyotirlinga is adorned with sacred offerings. Devotees perform Rudrabhishekam using water from the Ganga, milk, honey, and sacred ashes.  In the evening, the city comes alive with the grand Ganga Aarti held at the nearby ghats, where lamps, chants, bells, and conch shells create a divine spectacle. Special rituals are performed during Maha Shivaratri, Shravan month, Mondays, and solar-lunar eclipses, when millions gather for darshan. Continuous chanting of “Har Har Mahadev” fills the temple precincts, reinforcing Kashi’s identity as the spiritual axis of the Hindu universe.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="https://www.shrikashivishwanath.org/" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

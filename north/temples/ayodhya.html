@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ayodhya Ram Mandir | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Ayodhya Ram Mandir</h1>
+    <div class="category">LOCATION: Ayodhya, Uttar Pradesh, India</div>
+
+    <div class="gallery">
+        <img src="/north/images/ayodhya.jpg" alt="Ayodhya Ram Mandir image 1">
+        <img src="nan" alt="Ayodhya Ram Mandir image 2">
+        <img src="nan" alt="Ayodhya Ram Mandir image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Shri Ram Janmabhoomi Mandir in Ayodhya stands as one of the most spiritually significant and emotionally resonant temples in India. Built at the sacred birthplace of Lord Shri Rama, the seventh incarnation of Lord Vishnu, the temple symbolizes dharma, devotion, patience, and civilizational continuity. Ayodhya, revered as one of the seven Moksha-puris, has been a center of spiritual life for thousands of years. The Ram Mandir is not merely a temple but a revival of faith, culture, and national consciousness rooted deeply in Indian civilization.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The Shri Ram Janmabhoomi Mandir is constructed in the traditional Nagara style of temple architecture using pink sandstone, without the use of steel or iron. The temple complex spans several acres and includes grand mandapas, intricately carved pillars, and sculpted depictions of episodes from the Ramayana. The sanctum houses the idol of Balak Ram (child form of Lord Rama), placed at the exact site believed to be His birthplace.Ayodhya has been associated with Lord Rama since ancient times and is extensively described in the Ramayana, Puranas, and other sacred texts. After centuries of historical transitions and legal proceedings, the construction of the temple began following the Supreme Court of India’s verdict in 2019. The consecration of the temple marked a historic moment, representing reconciliation, faith, and the endurance of cultural heritage across generations.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Lord Rama is revered as Maryada Purushottama — the ideal man who embodied righteousness, duty, compassion, and sacrifice. The Ram Mandir represents these eternal values and serves as a spiritual guide for leading a balanced and ethical life. Devotees believe that worshipping Lord Rama grants inner strength, clarity of purpose, and protection from negativity.Ayodhya itself is believed to be a divine city where even residing or remembering the name of Rama leads one toward moksha. The Ram Janmabhoomi Mandir stands as a beacon of bhakti (devotion), dharma (righteousness), and shanti (peace), reminding humanity of the power of truth, patience, and moral courage.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily rituals at Shri Ram Janmabhoomi Mandir include Mangala Aarti in the early morning, followed by Shringar Aarti, Bhog offerings, and evening Sandhya Aarti. Vedic chants, Ram Naam Japam, and recitations from the Ramcharitmanas are integral parts of the temple’s spiritual routine.Special observances are held during Ram Navami, Diwali, and other Vaishnava festivals, attracting devotees from across the world. The temple atmosphere is designed to promote devotion, discipline, and silent contemplation, allowing visitors to experience both collective worship and personal spiritual reflection.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="https://online.srjbtkshetra.org/#/login" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

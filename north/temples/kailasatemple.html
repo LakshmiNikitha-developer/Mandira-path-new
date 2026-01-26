@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kailasa Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Kailasa Temple</h1>
+    <div class="category">LOCATION: Ellora, Maharashtra, India</div>
+
+    <div class="gallery">
+        <img src="/north/images/kailasa.jpg" alt="Kailasa Temple image 1">
+        <img src="nan" alt="Kailasa Temple image 2">
+        <img src="nan" alt="Kailasa Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>When I first learned about the Kailasa Temple at Ellora, I realized that this is not just a temple but a living symbol of India’s spiritual and intellectual greatness. Carved entirely from a single monolithic rock in the 8th century CE, the Kailasa Temple stands as a breathtaking tribute to Lord Shiva and to the vision of ancient Indian civilization. This temple was not constructed in the usual way; instead, it was sculpted from top to bottom, removing massive amounts of stone with astonishing accuracy, patience, and devotion. Every pillar, sculpture, and corridor reflects a harmony between faith, art, and advanced engineering, making the Kailasa Temple one of the most extraordinary architectural achievements in the world. Standing before it, I feel a deep sense of pride and awe, as if history itself is reminding us of the heights our ancestors reached through discipline, devotion, and divine inspiration.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>When I look at the Kailasa Temple at Ellora, I feel like I am standing before one of the greatest miracles ever created by human hands. Dedicated to Lord Shiva as Kailasanatha, this temple was carved entirely from a single massive basalt rock in the 8th century CE during the reign of the Rashtrakuta king Krishna I. What makes this temple extraordinary is that it was not built upward but sculpted downward, starting from the top of the rock and moving deeper into the earth, removing thousands of tons of stone with unimaginable precision. Inspired by Mount Kailasa, the celestial abode of Lord Shiva, the temple complex includes towering pillars, massive Nandi mandapa, intricately carved walls depicting scenes from the Ramayana and Mahabharata, and powerful sculptures of Shiva in various cosmic forms. Standing here, I feel the silence speak — of devotion, vision, mathematics, engineering brilliance, and an unshakeable faith that transformed stone into divinity. The Kailasa Temple is not just architecture; it is a timeless declaration of what devotion combined with intellect can achieve.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, the Kailasa Temple represents Mount Kailasa brought to earth, symbolizing the union of the cosmic and the human realms. As a Shaivite monument, it reflects the philosophy of Shaivism where Shiva is both the destroyer and the supreme source of consciousness. The temple’s vertical descent mirrors the inward spiritual journey — from the outer material world into the inner sanctum of self-realization. The carvings of gods, goddesses, celestial beings, and mythological episodes are not merely decorative but act as visual scriptures guiding devotees toward dharma, devotion, and liberation. Every sculpture here feels intentional, reminding me that spirituality in ancient India was never separated from art, science, or daily life.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Unlike active pilgrimage temples, the Kailasa Temple today functions primarily as a protected heritage monument under the Archaeological Survey of India. Regular daily rituals like abhishekam or aarti are not conducted as in living temples, yet the sanctity of the Shiva linga inside the garbhagriha remains deeply respected. Devotees visiting the temple offer silent prayers, flowers, and mental worship, believing that the energy of centuries of devotion still vibrates within the stone walls. On auspicious days like Maha Shivaratri, the temple experiences a heightened spiritual presence, as devotees gather to honor Lord Shiva through meditation and reverence rather than formal ritual ceremonies.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official site" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

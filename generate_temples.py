@@ -3,7 +3,8 @@ from jinja2 import Template
 import os
 
 # Load Excel data
-df = pd.read_excel('data/north_temples.xlsx')
+df = pd.read_excel("data/north_temples.xlsx")
+
 
 # Load HTML template
 with open('temple-template.html', 'r', encoding='utf-8') as f:

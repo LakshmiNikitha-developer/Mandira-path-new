@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puri Jagannath Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Puri Jagannath Temple</h1>
+    <div class="category">LOCATION: Puri, Odisha, on the eastern coast of India near the Bay of Bengal</div>
+
+    <div class="gallery">
+        <img src="/north/images/puri.jpg" alt="Puri Jagannath Temple image 1">
+        <img src="nan" alt="Puri Jagannath Temple image 2">
+        <img src="nan" alt="Puri Jagannath Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>When I think about Jagannath Temple, I feel that this is one of the rare places where God feels close to ordinary people. Located in the sacred town of Puri, this temple is not just an architectural wonder but a powerful spiritual center where devotion flows without barriers of caste, class, or status. The very name “Jagannath” meaning “Lord of the Universe” reflects the inclusive and compassionate nature of the deity worshipped here.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The Jagannath Temple is a massive Kalinga-style architectural marvel built in the 12th century by King Anantavarman Chodaganga Deva. The temple complex rises majestically with its towering shikhara, intricate carvings, and sacred enclosures that resonate with centuries of continuous worship. What deeply moves me is that despite its grand scale, the temple maintains a sense of intimacy, where devotion feels personal and alive.Historically, the Jagannath Temple has survived invasions, natural calamities, and political changes, yet its spiritual identity has remained unbroken. Built during the Eastern Ganga dynasty, the temple became a stronghold of Bhakti traditions in eastern India. To me, its survival reflects the unshakable faith of devotees who protected the temple through devotion rather than force.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, Jagannath Temple holds an unmatched place in Hinduism as one of the Char Dham pilgrimage sites established by Adi Shankaracharya. Lord Jagannath, along with his siblings Balabhadra and Subhadra, is worshipped here in a unique, formless wooden representation that symbolizes the infinite and universal nature of the divine. To me, this form teaches that God does not need perfection of shape to radiate divine love.The deities of Jagannath Temple are unlike any other in India — with large round eyes, unfinished limbs, and a childlike form. I find this deeply symbolic because it removes fear and hierarchy, allowing devotees to approach God with innocence and emotional surrender. The wooden deities are periodically replaced through the sacred Nabakalebara ritual, reminding us that the soul is eternal even when the body changes.One of the most fascinating aspects of Jagannath Temple is its sacred kitchen, considered the largest temple kitchen in the world. The Mahaprasad cooked here is offered first to Lord Jagannath and then shared among devotees without discrimination. For me, this tradition beautifully represents spiritual equality, where food becomes a sacred bond connecting all beings.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily rituals at Jagannath Temple begin early morning with Mangala Aarti and continue throughout the day with multiple bhogas, darshans, and aartis. Every ritual is performed with ancient precision following centuries-old traditions. I feel that the continuity of these rituals keeps the spiritual heartbeat of the temple alive, making it a place where time itself bows to devotion.The Rath Yatra of Puri is one of the most powerful spiritual events I have ever learned about, where Lord Jagannath steps out of the temple to meet devotees on the streets. During this festival, massive wooden chariots are pulled by millions of devotees, symbolizing that God Himself comes to the people, not the other way around. This festival teaches me that true divinity never distances itself from humanity.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="https://www.shreejagannatha.in" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

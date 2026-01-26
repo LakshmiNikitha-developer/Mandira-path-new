@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Badrinath Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Badrinath Temple</h1>
+    <div class="category">LOCATION: Badrinath, Chamoli District, Uttarakhand, India</div>
+
+    <div class="gallery">
+        <img src="/north/images/badhrinath.jpg" alt="Badrinath Temple image 1">
+        <img src="nan" alt="Badrinath Temple image 2">
+        <img src="nan" alt="Badrinath Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Badrinath Temple, nestled in the majestic Garhwal Himalayas along the banks of the Alaknanda River, is one of the most sacred pilgrimage destinations in India. Dedicated to Lord Vishnu in his form as Badri Narayan, the temple is part of the revered Char Dham Yatra and holds immense significance in Vaishnavism. Surrounded by snow-clad peaks and divine silence, Badrinath is not merely a place of worship but a powerful spiritual retreat that has guided seekers toward liberation for centuries.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The Badrinath Temple is believed to have been established by Adi Shankaracharya in the 8th century CE as part of his mission to revive Hindu spiritual traditions across India. The temple is built in traditional North Indian architectural style, featuring a brightly painted facade, arched windows, and a gold-gilded roof. The sanctum houses a black stone idol of Lord Vishnu seated in a meditative posture, symbolizing divine balance and cosmic order.Located at an elevation of over 3,300 meters, the temple remains open only for a limited period each year due to extreme weather conditions. Nearby sacred sites include Tapt Kund (hot water spring), Mana village (the last Indian village before Tibet), and Vyas Gufa, where sage Ved Vyasa is believed to have composed the Mahabharata. Badrinath has been mentioned in ancient scriptures such as the Vishnu Purana, Skanda Purana, and Mahabharata, reinforcing its timeless sanctity.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Badrinath is regarded as one of the holiest abodes of Lord Vishnu and is believed to grant moksha (liberation) to devoted pilgrims. According to legend, Lord Vishnu performed intense penance at this location for the welfare of humanity, while Goddess Lakshmi protected him in the form of a Badri tree. The temple thus symbolizes ascetic discipline, devotion, and divine compassion.As one of the Char Dhams, Badrinath represents the northern spiritual gateway of India. Pilgrims believe that a visit to Badrinath cleanses accumulated karmas and guides the soul toward spiritual awakening. The serene Himalayan environment enhances meditation, self-reflection, and surrender to the divine.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily worship at Badrinath Temple begins with the Abhishek ceremony, followed by Alankar Darshan where the deity is adorned with sacred ornaments. Devotees also perform rituals at Tapt Kund before entering the temple, as its holy waters are believed to purify both body and soul.Special pujas such as Maha Abhishek, Geeta Path, and Vishnu Sahasranama chanting are conducted regularly. Major festivals like Mata Murti Ka Mela, Badri-Kedar Utsav, and the opening and closing ceremonies of the temple season attract pilgrims from across the world. The rituals at Badrinath emphasize discipline, devotion, and surrender to divine will.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="https://badrinath-kedarnath.gov.in" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

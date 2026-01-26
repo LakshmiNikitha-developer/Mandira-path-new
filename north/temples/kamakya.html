@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kamakya Devi Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Kamakya Devi Temple</h1>
+    <div class="category">LOCATION: Nilachal Hill, Guwahati, Assam, India</div>
+
+    <div class="gallery">
+        <img src="/north/images/kamakya.jpg" alt="Kamakya Devi Temple image 1">
+        <img src="nan" alt="Kamakya Devi Temple image 2">
+        <img src="nan" alt="Kamakya Devi Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>When I learned about the Kamakhya Temple, I realized that this sacred place represents the raw and powerful essence of Indian spirituality. Situated atop the Nilachal Hill overlooking the Brahmaputra River, Kamakhya Temple is one of the most important Shakti Peethas in India and a central hub of Tantra worship. Dedicated to Goddess Kamakhya, the deity symbolizes feminine energy, fertility, creation, and desire, making this temple a celebration of life itself rather than a denial of it. What makes Kamakhya unique is that the Goddess is not worshipped in a human form but through a naturally formed yoni stone, reminding me that divinity exists in natural forces and cosmic cycles.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The Kamakhya Temple complex is built in a distinctive Nilachal architectural style, combining elements of Nagara temple design with indigenous Assamese influences. The main sanctum lies below ground level and houses a cleft in the rock representing the yoni of the Goddess, which is naturally kept moist by an underground spring. Surrounding the main shrine are several smaller temples dedicated to the ten Mahavidyas, including Kali, Tara, Bhuvaneshwari, and Bhairavi, making the entire complex a powerful Shakti mandala. As I explore its structure, I feel that every stone here carries centuries of devotion, mystery, and spiritual discipline.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Spiritually, Kamakhya Temple stands as the heart of Shakta and Tantric traditions in India. It is believed to be the place where the yoni of Goddess Sati fell during Lord Shiva’s cosmic Tandava, making it a sacred center of creation and regeneration. Unlike temples that emphasize renunciation, Kamakhya teaches the acceptance of life’s energies — desire, birth, growth, and transformation — as divine. To me, this temple powerfully conveys that spirituality does not reject the material world but sanctifies it, honoring the feminine principle as the source of all existence.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily worship at Kamakhya Temple begins with traditional Tantric rituals performed by trained priests, including ceremonial bathing of the sacred stone, offering of flowers, incense, and symbolic elements associated with Shakti worship. Animal sacrifice, though controversial, is still practiced during special festivals as a symbolic Tantric offering, especially during Durga Puja. The temple follows a strict ritual calendar, and devotees participate through darshan, prayer, and offerings seeking fertility, protection, and spiritual strength. Observing these rituals made me feel how deeply ancient practices continue to live in the present.The most significant festival of Kamakhya Temple is the Ambubachi Mela, which celebrates the annual menstruation of Goddess Kamakhya, symbolizing the fertility of the Earth. During this period, the temple remains closed for three days and then reopens with grand celebrations attended by thousands of devotees, ascetics, and Tantric practitioners from across India. Other important festivals include Durga Puja, Manasha Puja, and Durgadeul, all highlighting the supremacy of Shakti energy.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="https://www.maakamakhya.org/" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
