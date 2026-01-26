@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahabalipuram Submerged Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Mahabalipuram Submerged Temple</h1>
+    <div class="category">LOCATION: Mahabalipuram (Mamallapuram), Tamil Nadu, India</div>
+
+    <div class="gallery">
+        <img src="/recent/images/mahabalipuram.jpg" alt="Mahabalipuram Submerged Temple image 1">
+        <img src="nan" alt="Mahabalipuram Submerged Temple image 2">
+        <img src="nan" alt="Mahabalipuram Submerged Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The Seven Pagodas of Mahabalipuram refers to the legendary group of temples along the Coromandel Coast, with the Shore Temple being the only surviving structure above water. Believed to have been constructed during the Pallava dynasty, under kings Mahendravarman I and Narasimhavarman I (7th–8th century CE), these temples formed a flourishing coastal city known for its rock-cut architecture and monumental shrines. The “Seven Pagodas” name has persisted in Indian and European accounts for over a millennium, symbolizing both myth and historical fascination, as six of the temples are believed to have been submerged due to storms and coastal erosion, creating a legendary underwater heritage.The Seven Pagodas are unique for their legendary submergence, combination of surviving and lost temples, early Pallava architectural style, and coastal rock-cut artistry. The interplay of myth, history, and archaeology, along with the Shore Temple’s enduring presence, makes this site one of India’s most fascinating cultural and spiritual landmarks, bridging legend with tangible heritage.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The Shore Temple, the surviving pagoda, stands on a rocky outcrop and is built in Dravidian style, primarily with granite blocks. The site once featured rathas (chariot-shaped monolithic temples), cave temples, and monasteries (viharas), reflecting the Pallava focus on both devotion and learning. The temples were richly adorned with carvings of Hindu deities, mythological narratives, and ornamental motifs, including depictions of Vishnu, Shiva, and their avatars. According to local legend and historical accounts, six other temples were submerged during great storms, leaving only the Shore Temple visible, while remnants of the lost pagodas can sometimes be seen beneath the waves during low tide.The Seven Pagodas demonstrate early Dravidian temple architecture with a combination of rock-cut rathas, monolithic shrines, and structural temples. The Shore Temple features a rectangular plan, vimana (tower), mandapa (hall), and garbhagriha (sanctum), showcasing precise stone craftsmanship. The partially submerged temples highlight engineering and artistic ingenuity of the Pallavas, including alignment with coastal geography and enduring carvings despite centuries of exposure to the sea. The site remains an architectural benchmark for understanding South Indian temple evolution.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>The Seven Pagodas were a major Shaivite and Vaishnavite center in ancient times, serving as a hub for worship, learning, and cultural activities. Historical accounts suggest that the temples were patronized by the Pallava kings to demonstrate political power and spiritual devotion. The site gained legendary status due to the stories of submergence, attributed in folklore to the god Indra, who supposedly sank the temples to protect or punish. The temples were documented by European explorers such as Marco Polo and astronomers like John Goldingham, reinforcing their global cultural significance. Today, Mahabalipuram is a UNESCO World Heritage Site, attracting pilgrims, historians, and tourists alike.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>The Shore Temple remains an active site of worship, with Shaivite and Vaishnavite rituals conducted daily. Festivals such as Mahashivaratri and Vaikunta Ekadasi are celebrated with devotion. The submerged temples, however, are not accessible, and rituals are limited to the surviving pagoda.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official  site available" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

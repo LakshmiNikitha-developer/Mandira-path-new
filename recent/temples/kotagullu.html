@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KotaGullu | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>KotaGullu</h1>
+    <div class="category">LOCATION: Ghanpur, near Warangal, Telangana, India</div>
+
+    <div class="gallery">
+        <img src="/recent/images/kotagullu.jpg" alt="KotaGullu image 1">
+        <img src="nan" alt="KotaGullu image 2">
+        <img src="nan" alt="KotaGullu image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Kota Gullu, popularly known as the Ghanpur Temples, is a group of 12th-century stone temples constructed during the reign of King Ganapatideva of the Kakatiya dynasty (1199–1260 CE). Located about 9 km northwest of the famous Ramappa Temple in Palampet, these temples were built to honor Lord Shiva and represent one of the finest examples of Kakatiya-era architecture in Telangana. The complex holds historical, cultural, and spiritual significance, illustrating the region’s rich temple-building traditions before invasions and natural calamities caused widespread damage.Kota Gullu is unique due to its clustered Kakatiya-era Shiva temples, intricate carvings and sculptures, and its historical endurance despite invasions and natural disasters. Its combination of architectural sophistication, sculptural detail, and historical inscriptions makes it a rare and invaluable cultural heritage site in Telangana.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The Kota Gullu complex originally comprised around 22 temples, varying in size and design, all enclosed within a double-walled stone perimeter. The main temple, dedicated to Shiva, is the most prominent, with an additional north-facing Shiva shrine mirroring its appearance. The temples feature garbhagriha (sanctum), antarala (vestibule), and sabha mandapa (assembly halls), with exquisitely carved porticos. The mandapas and entrances are adorned with mythical figures like Gaja Kesari (half-human, half-lion riding an elephant) and horse-headed lion figures, while sculptures of Nandi, dancers, musicians, decorative ceilings, and bas-reliefs enrich the temple grounds. Numerous statues discovered in the vicinity have been preserved for visitors, highlighting the intricate craftsmanship of the Kakatiya period.Kota Gullu exemplifies Kakatiya architectural excellence, with intricately carved stone walls, elaborate mandapas, and ornamental porticos. The assembly halls and Sabha mandapas showcase detailed sculptures of mythical creatures and divine motifs. The craftsmanship of madanikas (sculpted female attendants), decorative ceilings, and bas-reliefs underscores the artistic and religious significance of the temple complex. The use of double-walled enclosures for protection and the strategic layout of multiple shrines within the complex reflect careful planning and temple design innovations of the 12th century.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Kota Gullu was commissioned by King Ganapatideva and served as an important Shaivite center in the 13th century. Historical inscriptions on the temple mention Ganapathi Reddy, a devotee who donated land and installed Lord Ganapateshwara during Ganapatideva’s reign (1234–35 CE). The temple suffered significant damage from invasions by Muslim armies between the 14th and 16th centuries and possibly a major earthquake in the 17th century, yet it remains a testament to the spiritual devotion, historical continuity, and cultural sophistication of the Kakatiya dynasty.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>While Kota Gullu is primarily a historical monument today, occasional worship and rituals are performed by local devotees. The temples are open for tourism and pilgrimage, with preservation efforts maintaining the sanctity and accessibility of the complex.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official  site available" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

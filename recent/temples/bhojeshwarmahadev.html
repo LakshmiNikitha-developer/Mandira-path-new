@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhojeshwar Mahadev Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Bhojeshwar Mahadev Temple</h1>
+    <div class="category">LOCATION: Bhojpur village, Raisen district, Madhya Pradesh, India.                                    Found but forgotten/incomplete</div>
+
+    <div class="gallery">
+        <img src="/recent/images/BhojeshwarTemple.jpg" alt="Bhojeshwar Mahadev Temple image 1">
+        <img src="nan" alt="Bhojeshwar Mahadev Temple image 2">
+        <img src="nan" alt="Bhojeshwar Mahadev Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Bhojeshwar Temple is an incomplete 11th-century Shiva temple built by the Paramara king Bhoja, who reigned from around 1010 to 1055 CE. Despite its unfinished state, it is considered a significant historical and spiritual site. The temple is renowned for the massive single-rock Shiva lingam in the sanctum and is valued not only for its religious importance but also for the rare insights it provides into medieval temple construction techniques and architectural planning.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The temple’s sanctum houses a 7.5-foot-high Shiva lingam carved from a single rock, which remains the central point of worship. Surrounding the sanctum are partially completed mandapas, large granite blocks, and unfinished pillars that clearly illustrate the intended grandeur of the structure. Unique to this temple are the engraved architectural drawings and mason’s marks on nearby rocks, showing the exact plans, measurements, and construction methods that were intended. These features make Bhojeshwar Temple an extraordinary example of medieval Indian temple engineering, where visitors can observe the planning process rather than just the completed shrine.Bhojeshwar Temple exemplifies North Indian Nagara style architecture, featuring a large sanctum to house the enormous Shiva lingam and mandapas planned for congregational and ceremonial purposes. The incomplete pillars, halls, and engraved inscriptions provide rare insight into the step-by-step temple construction process of the 11th century. The temple’s unique architectural elements, particularly the rock-carved construction plans and mason’s marks, make it an invaluable site for both architects and historians studying medieval Indian architecture.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>King Bhoja, a celebrated patron of the arts, commissioned this temple to honor Lord Shiva. Though incomplete, the temple is spiritually important, and festivals such as Maha Shivaratri attract devotees who perform traditional rituals and prayers. Historically, the site offers scholars a direct glimpse into 11th-century temple architecture, design principles, and construction processes, which are rarely recorded in other temples. The unfinished nature of the temple also conveys a philosophical reflection on the impermanence of human endeavors, combining spiritual reverence with historical curiosity.Bhojeshwar Temple is unique because it remains unfinished, providing visible evidence of construction techniques and architectural planning. Its engraved architectural plans and mason’s marks are rare among Indian temples, offering a live insight into 11th-century temple engineering. The massive single-rock Shiva lingam and the combination of spiritual, historical, and scholarly significance make it an extraordinary monument in India’s temple heritage.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Due to its incomplete status, daily rituals at the temple are limited, but worship is observed during major festivals like Maha Shivaratri, when devotees perform Abhishekam (ritual bathing) and offer prayers to the Shiva lingam. While not a fully active temple, these periodic rituals maintain its spiritual relevance.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official  site available" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

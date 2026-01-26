@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gandikota Madavaraya Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Gandikota Madavaraya Temple</h1>
+    <div class="category">LOCATION: Gandikota Fort, Kadapa district, Andhra Pradesh, India</div>
+
+    <div class="gallery">
+        <img src="/recent/images/gandikota.jpg" alt="Gandikota Madavaraya Temple image 1">
+        <img src="nan" alt="Gandikota Madavaraya Temple image 2">
+        <img src="nan" alt="Gandikota Madavaraya Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Madhavaraya Temple is a 16th-century Hindu temple dedicated to Lord Krishna, locally revered as Madhava. Situated within the historic Gandikota Fort, the temple is a significant monument of the Vijayanagara period and is recognized as a Monument of National Importance by the Government of India. The temple is an important example of Vijayanagara-era architecture, reflecting both the artistic and religious grandeur of the period, and remains a focal point for historical and spiritual exploration in the region.Madhavaraya Temple is unique due to its integration of devotional, ceremonial, and practical spaces within a fortified complex, its Vijayanagara-style carvings and mandapa planning, and the presence of multiple mandapas with specialized functions. Its combination of historical inscriptions, ornamental craftsmanship, and functional design distinguishes it from other temples of the same era and highlights the sophistication of 16th-century South Indian temple architecture.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The temple is set within a rectangular courtyard surrounded by a prakara wall, with an eastern gopura as the main entrance and smaller entrances on the other three sides. The courtyard contains a pillared cloister and central mandapas, including a six-pillared mandapa in front of the kitchen hall, a wedding hall with sixteen pillars, and a northern mandapa likely associated with the Navagraha or festival rituals. The pillars and ceilings are adorned with intricate carvings of creepers, lotus petals, floral motifs, and depictions of deities, including Vishnu, Lakshmi, Ganapati, Surya, and Yoga Narasimha, along with decorative vyala figures and female attendants. The kitchen hall and other mandapas were thoughtfully designed with ventilation gaps and decorative motifs, illustrating the functional and ceremonial planning of the temple complex. The temple’s garbha-griha is oblong and may have originally housed images of Alvars or Saptarishis, complementing the worship of Lord Krishna as Madhavaraya.The temple is a prime example of Vijayanagara-style architecture, characterized by elaborately carved pillars, multi-level gopuras, and ornate mandapas. The gopura, although partially damaged at the top shikhara, features carvings of male and female figures, door-keepers, floral motifs, and intricate ceiling medallions. The design of the mandapas, kitchen hall, and wedding hall shows careful planning for both ceremonial functions and practical needs, while the rectangular courtyard and surrounding cloisters highlight symmetry and spatial organization. The combination of ornamental detail, functional planning, and devotional symbolism makes the temple architecturally significant among Vijayanagara monuments.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Madhavaraya Temple was constructed in the first quarter of the 16th century under the Vijayanagara dynasty, as confirmed by inscriptions mentioning devotees such as Papa Timmaraju offering garlands to Madhava-raya. The temple represents the integration of devotion, community ritual, and festival celebration, serving as a center for worship and religious gatherings. Its location within Gandikota Fort emphasizes the interconnection of spiritual and royal authority, reflecting the Vijayanagara rulers’ patronage of art, religion, and architecture. The temple remains spiritually significant for devotees of Krishna, and historical inscriptions provide insight into local devotional practices and offerings during the 16th century.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Daily rituals are not extensively documented, but the temple would have traditionally hosted poojas and festival rituals dedicated to Krishna, including garland offerings, ceremonial worship, and seasonal festivals, consistent with Vijayanagara-era temple practices. Its design facilitated gatherings for kalyana-mandapas (wedding rituals) and Navagraha ceremonies, indicating an active ritual life historically.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official  site available" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

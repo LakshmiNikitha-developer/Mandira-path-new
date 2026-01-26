@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chausath Yogini Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Chausath Yogini Temple</h1>
+    <div class="category">LOCATION: Mitaoli village, Morena district, Madhya Pradesh, India</div>
+
+    <div class="gallery">
+        <img src="/recent/images/chausathyogini.jpg" alt="Chausath Yogini Temple image 1">
+        <img src="nan" alt="Chausath Yogini Temple image 2">
+        <img src="nan" alt="Chausath Yogini Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The Chausath Yogini Temple in Mitaoli is an 11th-century circular temple dedicated to the worship of 64 Yoginis and Shiva, constructed during the reign of Kachchhapaghata king Devapala around 1055–1075 CE. It is one of the well-preserved Yogini temples in India and stands out for its unique circular hypaethral design, which is open to the sky, unlike conventional enclosed Indian temples. The temple was historically associated not only with spiritual practices but also with education in astrology and mathematics, reflecting the integration of scholarly and religious life in medieval India.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>Built on a hill approximately 100 feet high, with 100 steps leading to the entrance, the temple has a circular layout with a radius of 170 feet. The outer circular wall originally contained 65 small chambers, intended for 64 Yoginis and a central goddess (Devi), while the central open mandapa is dedicated to Shiva. Each chamber had a flat roof and pilasters, and the outer walls were decorated with statues of couples flanked by maidens, although most of these are now damaged or lost. The central shrine’s roofing slabs were perforated to channel rainwater into an underground tank. Over time, many of the original Yogini images were replaced by Shiva idols. Remarkably, the design of the Parliament building in India is said to have been inspired by this temple’s circular plan, demonstrating its architectural influence beyond its spiritual function.The Chausath Yogini Temple is unique for its circular, hypaethral design, rare among Indian temples, and for its dual role as a spiritual and educational center. Its 65 chambers for Yoginis, the open central mandapa, and perforated roofing for water drainage distinguish it architecturally, while its connection to astrology, mathematics, and the design inspiration for India’s Parliament building highlight its broader cultural significance.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>The temple is historically significant as a place of worship for Yoginis and Shiva, reflecting esoteric Tantric practices where Yoginis were believed to possess mystical powers. It also served as an educational center for astrology and mathematics, particularly connected to solar transits, illustrating the temple’s broader role in knowledge dissemination. Declared a protected monument by the Archaeological Survey of India in 1951, it has remained a symbol of spiritual devotion and scholarly heritage. Festivals and rituals related to Shiva and Tantric traditions would have been central, although most daily rituals today are limited due to the site’s historical status.The temple is a rare example of hypaethral circular architecture, with the entire structure open to the sky, allowing direct communion with the Yoginis. Its 65 surrounding chambers, central mandapa, and perforated roofing system demonstrate advanced planning for water management and ceremonial use. The temple’s design emphasizes symmetry, proportion, and ritual functionality, which not only inspired later structures like the Indian Parliament but also showcases the sophistication of 11th-century temple architecture in India. The outer wall’s original decorations and the structural layout provide insight into both artistic and functional priorities of medieval temple builders.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>Due to its historical and partially preserved status, daily worship is limited, though special rituals and festivals related to Shiva or Yoginis may be performed occasionally by local priests or during heritage-focused celebrations. Historically, the temple would have hosted Tantric rites and astronomical observations aligned with solar movements, integrating spiritual and scientific practices.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official  site available" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

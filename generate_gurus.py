@@ -10,7 +10,7 @@ with open('temple-template.html', 'r', encoding='utf-8') as f:
     template = Template(f.read())
 
 # Output directory for South temples
-output_dir = 'south/temples'
+output_dir = 'gurus/temples'
 os.makedirs(output_dir, exist_ok=True)
 
 # Generate pages

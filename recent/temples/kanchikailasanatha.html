@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanchi Kailasanatha Temple | Mandira Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT FOR NAVBAR -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+        nav { background-color: #3a2e2e; padding: 15px; display: flex; align-items: center; }
+            --primary: #3a2e2e;
+            --secondary: #f4c430;
+            --bg: #faf7f2;
+            --text: #2b2b2b;
+            --muted: #666;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif; /* ✅ sans-serif only for navbar */
+            position: relative;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* MOBILE MENU */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background: var(--primary);
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
+
+        /* ================= PAGE CONTENT ================= */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .official-link a {
+            display: inline-block;
+            background: var(--secondary);
+            color: black;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .official-link a:hover {
+            background: #ddb000;
+        }
+
+        footer {
+            background: #2b2b2b;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-logo" style="color: #d3a81a;">Mandira Path</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/index.html" >Home</a>
+        <a href="/north/north.html">North</a>
+        <a href="/south/south.html">South</a>
+        <a href="/recent/recent.html">Forgotten</a>
+        <a href="/idols/idols.html">Idols</a>
+        <a href="/gurus/gurus.html">Gurus</a>
+        <a href="/kumbh/kumbh.html">Kumbh</a>
+        
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Kanchi Kailasanatha Temple</h1>
+    <div class="category">LOCATION: Kanchipuram, Tamil Nadu, India</div>
+
+    <div class="gallery">
+        <img src="/recent/images/kanchikailasanatha.jpg" alt="Kanchi Kailasanatha Temple image 1">
+        <img src="nan" alt="Kanchi Kailasanatha Temple image 2">
+        <img src="nan" alt="Kanchi Kailasanatha Temple image 3">
+    </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>The Kailasanathar Temple, also called the Kailasanatha Temple, is a Pallava-era historic Hindu temple dedicated to Lord Shiva and is considered one of the oldest surviving monuments in Kanchipuram, built around 700 CE by King Narasimhavarman II of the Pallava dynasty, with later additions by Mahendravarman III. This temple represents a key landmark in early Dravidian architecture and serves as a significant center of Shaivite worship, historical scholarship, and art appreciation. Its longevity and intricate design make it an enduring symbol of Tamil religious and cultural heritage.</p>
+    </section>
+
+    <section>
+        <h2>Temple Description</h2>
+        <p>The temple is designed on a square plan and comprises a mukha-mandapa (entrance hall), a maha-mandapa (gathering hall), and a primary garbha-griha (sanctum) crowned with a four-storey vimana. The main sanctum is surrounded by nine smaller shrines, seven outside and two flanking the entrance, all dedicated to various forms of Shiva. The outer walls of the temple’s prakara (courtyard) contain cells that hold 58 additional small shrines, forming a circumambulatory passage around the main shrine. The temple walls are adorned with intricate carvings depicting Hindu deities, mythological scenes, and motifs from Shaivism, Vaishnavism, Shaktism, and Vedic traditions. Early murals on the inner walls of the courtyard cells represent some of the finest examples of 7th–8th century Tamil mural art, reminiscent of the Ajanta Caves and contemporaneous Vaikunthaperumal temple paintings. Numerous inscriptions in early scripts are found on the walls, providing rich historical and epigraphical insight into the Pallava period.</p>
+    </section>
+
+    <section>
+        <h2>Spiritual Significance</h2>
+        <p>Kailasanathar Temple was built in the Smartha tradition, promoting worship of Shiva along with other deities such as Vishnu, Surya, Devi, and Ganesha. It exemplifies early temple planning and Shaivite devotion in South India, serving both as a place of active worship and as a repository of Pallava art and inscriptions. Historically, it is significant for its role in consolidating Pallava religious authority and fostering the development of Dravidian temple architecture. The temple remains a major pilgrimage site and a key spiritual center in Kanchipuram, attracting devotees and scholars alike.The temple is renowned for its early Dravidian architectural style, characterized by the vimana, square sanctum, and the arrangement of shrines and cells. Its 58 small shrines integrated into the high compound walls form a unique circumambulatory structure, while the intricate sculptures and mural art highlight advanced artistic skills. The temple’s carvings depict both divine and everyday themes, showing a combination of religious devotion and attention to detail in ornamentation. The construction techniques, layout, and artistry make Kailasanathar Temple a precursor to later South Indian temples, influencing Dravidian architecture for centuries.</p>
+    </section>
+
+    <section>
+        <h2>Daily Rituals & Practices</h2>
+        <p>The temple is an active place of worship, with regular poojas and rituals conducted according to traditional Shaivite practices. Devotees perform Abhishekam, Alankaram, and Deeparadhana daily, along with festivals that follow the Tamil religious calendar, maintaining the temple’s spiritual relevance over more than 1,300 years.</p>
+    </section>
+
+    <section class="official-link">
+        <h2>Official Temple Website</h2>
+        <a href="No official  site available" target="_blank">Visit Official Website</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 <span>Mandira Path</span> • Preserving India’s Sacred Heritage
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
