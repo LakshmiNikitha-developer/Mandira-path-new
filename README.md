@@ -12,9 +12,8 @@ Explore the platform here: [Mandira Path](https://mandira-path-new.netlify.app/)
 
 * Multi-dimensional categorization of temples by:
 
-  * Geography (North, South, East, West India)
-  * Dynasty (Kakatiya, Chola, Vijayanagara, Hoysala, etc.)
-  * Deity (Shiva, Vishnu, Shakti, others)
+  * Geography (North Indian, South Indian)
+  * Deity (Unique Idols, Gurus)
   * Special significance (architectural uniqueness, historical importance)
 * Card-based UI for clean, intuitive navigation
 * Detailed temple descriptions highlighting spiritual, historical, and architectural significance
@@ -61,4 +60,4 @@ This project is intended for **educational and cultural purposes**.
 
 ---
 
-*Created by Lakshmi Nikitha*
+*Created by Velpula Lakshmi Nikitha*
